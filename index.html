@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="pokedex-list">
+    <form class="form">
+        <input type="text" id="pokemon-name" placeholder="Digite o nome do pokémon"  size="40">
+      <span>
+        <button class="searchbutton" onclick="searchPokemon(event)">
+          <img src="images/search-icon.webp" width="20" height="20" alt="Buscar">
+        </button>
+      </span>
+    </form>
+    <div id="pokemon-list" class="list-group"></div>
+    <span>
+      <button class="left-arrow-button" onclick="previousPage(event)"">
+        <img src="images/left-arrow.png" width="20" height="20" alt="Carregar mais">
+      </button>
+      <button class="right-arrow-button" onclick="nextPage(event)">
+        <img src="images/right-arrow.png" width="20" height="20" alt="Carregar mais">
+      </button>
+    </span>
+  </div>
+  <div class="pokemon-image">
+    <img src="images/pokébola.png" class="pokeball" width="500" height="500">
+    <h2 class="pokemon-name">Pokémon</h2>
+    </span>
+  </div>
+  <div class="pokemon-info">
+    <table class="table table-light table-bordered rounded-3 overflow-hidden">
+      <thead>
+        <tr>
+          <th colspan="2" class="p-4">Informações do Pokémon</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <th class="p-4">ID do Pokémon</th>
+          <td id="pokeID" class="p-4">-</td> <!-- Id do Pokémon -->
+        </tr>
+        <tr>
+          <th class="p-4">Nome do Pokémon</th>
+          <td id="pokeName" class="p-4">-</td> <!-- Nome do Pokémon -->
+        </tr>
+        <tr>
+          <th class="p-4">Tipo do Pokémon</th>
+          <td id="pokeType" class="p-4">-</td> <!-- Tipo do Pokémon -->
+        </tr>
+        <tr>
+          <th class="p-4">Altura do Pokémon</th>
+          <td id="pokeHeight" class="p-4">-</td> <!-- Altura do Pokémon -->
+        </tr>
+        <tr>
+          <th class="p-4">Peso do Pokémon</th>
+          <td id="pokeWeight" class="p-4">-</td> <!-- Peso do Pokémon -->
+        </tr>
+        <tr>
+          <th class="p-4">Habilidades do Pokémon</th>
+          <td id="pokeAbilities" class="p-4">-</td> <!-- Habilidades do Pokémon -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
