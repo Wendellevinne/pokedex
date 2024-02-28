@@ -13,10 +13,6 @@ function Pokemon(id, name, type, img, cry, height, weight, abilities){
   this.abilities = abilities;
 }
 
-// function loadPokedexEntry(params) {
-  
-// }
-
 async function getPokemonList(firstPokemon, lastPokemon){
 
   localStorage['firstPokemon'] = Number.parseInt(firstPokemon);
